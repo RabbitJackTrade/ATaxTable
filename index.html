@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tax Table style calcs2</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css/new.min.css" />
+
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <form onsubmit="event.preventDefault(); calculateTax();">
+        <label for="income">Taxable Income: </label>
+        <input type="number" step="0.01" min="0" id="income" name="income" required oninput="currencyFormat(this)">
+        <p><button  id="button" type="submit">Calculate</button></p>
+    </form>
+    <p style="background-color: lightblue;" align="center" id="result"></p>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
